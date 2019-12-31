@@ -19,7 +19,6 @@ class School
   end
   
   def sort
-    sorted = roster.sort.to_h
-    sorted.values.map {|names| names.sort!}
+    roster.map {|names| names.sort!}
   end
 end
