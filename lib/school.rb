@@ -19,6 +19,6 @@ class School
   end
   
   def sort
-    roster.map {|names| names.sort!}
+    roster.map {|grade, students| students.sort!}
   end
 end
